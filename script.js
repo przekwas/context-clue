@@ -18,12 +18,19 @@ for (var i = 0; i < 100; i++) {
     //conditional to get 0-4 repeated for the friends array, 0-9 for location, 0-19 for items
     if (i >= 5) {
         friendArrayIndex = friendArray[i % 5];
+    }
+
+    if (i >= 10) {
         locationArrayIndex = locationArray[i % 10];
+    }
+
+    if (i >= 20) {
         itemArrayIndex = itemArray[i % 20];
     }
 
     //test accusation using the function
     var statement = alertMaker(friendArrayIndex, itemArrayIndex, locationArrayIndex);
+    console.log(friendArrayIndex, itemArrayIndex, locationArrayIndex);
     //appends the new accusation to the body
     $(document.body).append(statement);
 
