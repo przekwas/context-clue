@@ -27,7 +27,7 @@ for (var i = 0; i < 100; i++) {
     //appends the new accusation to the body
     $(document.body).append(statement);
 
-    //function to take 3 parameters and makesd them into a clickable alert message to each accusation
+    //function to take 3 parameters and makes them into a clickable alert message to each accusation
     function alertMaker(friend, item, location) {
         return accusationLink.click(function () {
             alert("I accuse " + friend + ", with the " + item + " on the " + location + "!");
